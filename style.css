@@ -1,58 +1,35 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 190, 6);
     margin: 0px;
     font-size: 1.5vw;
+    align-items: center;
 }
 
-#logo {
+body > header > h1 {
     margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One";
+    padding: 10px;
     box-shadow: 5px 5px 8px 2px black;
-    width: 16%;
+    width: 21%;
 }
 
-ul {
-    margin: 0px;
+#logoimageone {
+    width: 120px;
+    height: 120px;
 }
 
 body > header {
-    background-color: orange;
-    color: white;
+    background-color: rgb(246, 190, 6);
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-#nav-ul {
-    display: flex;
-}
-
-#nav-ul > li {
-    padding: 8px;
-    margin: 16px;
-}
-
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-.navbutton  {
-    color: white;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 10%;
-}
-
-body > main article {
-    width: 70%;
-    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #main-content {
     display: flex;
     justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #main-content > div {
@@ -61,28 +38,44 @@ body > main article {
 
 h2 {
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 form {
     text-align: center;
 }
 
-img {
-    border-radius: 50%;
+#logoimagetwo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 11%;
 }
 
-body > footer {
-    background-color: blueviolet;
-    display: flex;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > img {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    object-fit: cover;
+}
+
+#footer-logo {
+    text-align: center;
 }
 
 #footer-ul {
-    display: flex;
     list-style: none;
+    text-align: center;
 }
 
 #footer-ul > div > li {
-    margin-left: 12px;
     color: white;
     text-decoration: none;
 }
